@@ -1,36 +1,44 @@
--- BY @Spofty_123
-function TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/200)end return res end 
+-- BY @Spofty_123 (Telegram)
+-- Remote Finder (Agent) - v1.0
+-- Thank you for using 
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB(data) m=string.sub(data, 0, 444) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
 
 
-local Rayfield = loadstring(game:HttpGet(TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({20800,23200,23200,22400,23000,11600,9400,9400,23000,21000,22800,21000,23400,23000,9200,21800,20200,22000,23400,9400,22800,19400,24200,20400,21000,20200,21600,20000})))()
+ 
+
+
+local Rayfield = loadstring(game:HttpGet(ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('NAPsJWBzpVWHbsgLyUMpkgzpVNDsnOlFFiUxkhCZKtHVzWlCrZEcMTPXefsOaHAZMvhGHCXHgBTHWvFxswXosazFznQfoIXDakWWnRwuPEfaUBBKQwizryysRruSqOOXDgsoJTarqtehtJmJnlRvoMMOqmpiqQHySiYRbbZqnpOdCbzkPyCshknaMXSDciEopMZNIXIyCrGtkaCRztSBfDLIgaTYfyhOghegArlCngulyLAChFAgNFPFEvKqPNSMVebhrmdLTpUQcQPbKxECNTciFnVXxznBpwBccgOKREoDEAOvBiptotDqzoMiuDIjCIXOzYHUSKeKcqcsiRigXWDsldIPNjPohJJsZzmWbIdIeOSpTrvYiCIBPxxtAexpzSUjqhNMBcEQOqlitYdvLXzknJrswZqRYMliUIDewLRPbHKtZyBYxtEfORFDaHR0cHM6Ly9zaXJpdXMubWVudS9yYXlmaWVsZA==')))()
 
 local Window = Rayfield:CreateWindow({
-    Name = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,6400,14000,21000,22000,20000,20200,22800}),
-    LoadingTitle = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,6400,14000,21000,22000,20000,20200,22800}),
-    LoadingSubtitle = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({15200,22200,19400,20000,21000,22000,20600,9200,9200,9200}),
+    Name = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('lOAlMqfNsoGfIvPpoybULqEiBKIppoEYeDuepdSCOQPbESxFCIllWyxwzwrMVRLfpSQdGAiNmKGGGtGcgnHkqjOTVXVImzceqVYwVjEdxXbxAWSYzFYdTPNNIJGHDeNXjysUvCdZNtQfDZOTxHvqSPzeBatYIAOTKVMcaxwwlKJTWRvOSgKNRBNmqunHQoiiaunMhueoABoDBQBQYihdOtdMaBZhAKiUKmQfNimbnYTomeMYVVTVNeZtfreJxCoPQBVVRAWICliTvnkKTSDUjOkTGiKBcnMbiCRkfNbaXqFgCUGXHzaISEPjmXeiFUWiBpOrLlHYYwdFDbEIXueUMBbLPaDqGOwSqSYwegXLFHAhDbOdnpjaytcJbFiEtpVqugYGuGsOShnmhcmGHPuZGBaffdVRaZJVGECBxjhSDfVDKnztMtfiRSzBSFPJUmVtb3RlIEZpbmRlciAtIEFnZW50IC0gdjEuMA=='),
+    LoadingTitle = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('kVsOPCfcbHlZCZSKEyyrZNhPXntKedTCGmDWshcXzOiCbsVeplZFbukeSYEUHclWPTZCuAcHDNcESRrXYYrNSCvldYigQzQFnrxJXyhIMRsmRIdzijrTJEcZbbKNplqSFagqYakLPTdNUKgHIgvKUHnBXjZZMJGUrUYOIPMYevQYHOJLpwPwjBpWFnNCamnaiRQbdTVwqxpkEMyeWGDSAzDFCXcuoyemwnNYomdNoHegMMDCCzHksZrMRxMSRgVqbdcIDuRRpApcPaSwnAieRbdaoBsTtnCaRNjdSiigrjnPDxtwlENaGfBfGypedYCPLxBdxjfeuUfFVIxzTGrONXuoOfXdVdHXQWspTLfFvrPAZuECSZcxBaoLzyDosGBfTKTwvziExjLUmTeXXNRoaIBVQnqXwbXvKhqGBwWPVNBwhvjyTFThTqQcKUEAUmVtb3RlIEZpbmRlcg=='),
+    LoadingSubtitle = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('cLJssenEjydTNrDFOvhKiBraKtAfLuMVVbwbOJQgPbDwjKNYYUDBFhQsnvdUMLJPzpTaohsAcRsyOkgVEsSplmVAkHJAQuyLmeJMZWYekkhxeLFzUecCimwLiJwHYDDSoWeGqlHxSdqWJQwDktPoziOqfcDVCfIAEsLKgYfLKKelnmWpWpBssQdhXqKBVcuqXQZOlPMOxGfmOkAFHKdQKWEUIvcYZVarfctGQHOwVuhsBTkPWAPGujOiAFPbDmJGBuUKuNiiBtQNcZfazQiuyBrqZjbBUEzKYQLmaaNnCfNBWOLlyjibUkImBfKBnRbwCQPGMUssbUVgyItVsLFLjEhOXaDXousZaKBhHUCxNpfVTiTaxaAysMqXuUeCxjMxIrWUPcdZshIbhRClLOsIFDQUZRIJPCkmVRBYfbggdsFwycjjXVxNJmiyeECVTG9hZGluZy4uLg=='),
     ConfigurationSaving = {
         Enabled = true,
         FolderName = nil,
-        FileName = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,14000,21000,22000,20000,20200,22800,13400,22200,22000,20400,21000,20600})
+        FileName = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('VfHPckrVPYBfKhcqnsdeOSrBsoKZAVCAaiADgsdmIcfyRvqOgvTCaiKSWbzvioEsowVqstuJvKSxZVLIIyfqstqcCHYHRlCaPnbXtiKbjLrRmwbAqwzqQpTNYihfOWSvwbiSWKqBbyAQHTmXcHetBEujWiHPjbeZhsWtxPoYdPLFJaJpwuktQgVvgKJGwYJYDVlaGLBCxSKnhVIcLOWdfAfXTazciMheYilXBqruYOLawRKCYmEEWaFFpiVwwwLCJWptreMAaiRjXAwHjmMqTkLwxswFhQAXEzBeVWfjRLhopnftlwQXTipEuJmYRbmqsXxbOwiNiotXNjNgYgsGgPRwwoETXMgSxcgXGkmBsjWNAzDDXYSDSDIUIgmfyoZgqbzBnTYUfsPylElHhnRtVRiwGsYVMVXXPnNQOmJmCYhfRKiuJWraNWcbvGxRUmVtb3RlRmluZGVyQ29uZmln')
     },
     Discord = {
         Enabled = false,
-        Invite = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({}),
+        Invite = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('exvbPAjOEZBoIFKmuMDybaigastFaWxrmLhXwkDawAnXRtDiRfwydSSMOgAmrAkVAUmIbFEjxTjLPGUxEQXqkhRLKMvosgPfnhTfxFRHcoMyuZfmzEDBBbRbYlyahTMVPemLBrGiDWrXFoZSGDxNvSFckaOHoCUYkalwevmsCuUMRMTupMXxywsQVuXBmOvtAyURaFVtHBvyXQBMCDRjbPQgkQGGYKkCJWZFZYTMygesqtVDcFHRlJIJnWhASovQuVfBrnVecYWXBXWfIUMtTsiepnbbxHVpCauKqzGPrHHxpTVZqNoIftATkKpvFkqpDWFmDGFjTiGoZdBSgDRDdmRMpLPTestWyzzfEstgCuKXJljzFCZPbrwFioncEUgtqJZAtCLMakpmHCXdIbtfyRDXBmkTJXTiBDJIewKphHeirnFeBJFfUGXqVMLL'),
         RememberJoins = true
     },
     KeySystem = false
 })
 
-local RemoteTab = Window:CreateTab(TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200}))
+local RemoteTab = Window:CreateTab(ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('AAJKjdvXGgjLvempxAuloujMEhPfwsFasxpDYjfdNhHKLnECVwshsEhINcCFpACVvsXvwSiYFumGpUxAOFmcuIbuMnVvjXHvaYbWErwDFaMYDUKRarjUmHoXUwtJKyHfliLvNBDTtQHPaMJseLyZCNkkVImNardTWiskCAqXDKMtHONeCsSDvezUJecxVrdXNAYPseejmFgbOyYKoXCItfBHolzsAtsAQPUslRHlmeqJUlmqveqAXRCWtXtCyVzSRCUgkcIpkcxrceuaqstyreyvkbxxhIFDMvcEGFGpwUGmarjSRDoOBptGiXPBxBlyqZKjbeHnSCkpWlELXCRVMLORWHKbrzoGezyPJeNwBvYmCDjgaFdhZtuMdGSgVsHTVWbqMNgHhxhrNcKMRcpcqOpfNgPHxtImFVuUPtzGogNkggKgnQQqQTzGghABUmVtb3Rl'))
 
 RemoteTab:CreateButton({
-    Name = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({14000,21000,22000,20000}),
+    Name = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('vVuFdMooAyLoUjQWLWeeQDCLLUHepUnyGFgsOJAdTfwWdntxYYdhSYlpJeJOaUWbTfZyyONekibPzDZjKydPRSDhsrxtrxNontZaQargMzBXWivOlWSFTiLhkRKflKgWJmMtCViooTIZHaZMzbDNvamCrkKZHIgGdbFMMSNqYtgccaOgxcypGAXnhbLUETCKAmYKoSbuWOAStxlejMCMFUncXRKYPTlLslRWrFdDhYbcmgLfNXzgQFxomkLRUXiUIMLvKPVBeDMnCfrPecYLcLJllmsHZyBzejFApQVljfCvAiDjHNxpdlCkqPeiRRtXeAAlqifHFIkNrGSFwLqmoEcAAXVhBtPLzFuRbnCshpiKzWwCXhYuTfHoEuwmwIDdyjOaHTGgoTFbLmJcaQHscBRXDYAuUqyoBdalEXOQsLvzyKurABdHYOBjDsKKRmluZA=='),
     Callback = function()
         local remoteList = {}
         local function findRemotes(parent)
             for _, obj in ipairs(parent:GetChildren()) do
                 local className = obj.ClassName
-                if className == TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,13800,23600,20200,22000,23200}) or className == TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,14000,23400,22000,19800,23200,21000,22200,22000}) then
+                if className == ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('QgFZQolcfdrIMgokWBSuVFAsJIxcDMAUUQNqqjqXGARinFbAppcAmfwTaGvgfKdDuTBfsrBESlgKYULVSRlZNhhyyJGpVblElDyLPsvspVQGuAGhDGeRVtSRkutEBLtqrnCgUxFCworyfhsQyaSGmqFuawMzwLqQicsgzjyQunthCjAONdkRAvuLxxgvXVtOnomQrwRVGmaePddiLsItApagQVwJhIYbejcrEZBurmafKhHWRXPLwPpZesSblfqGfCvdiLPalWhxOfofNqgTlOtXihggRVxaFqwJSxxYDXJADrgnhlFDwRhGNralqgyBQxrHoqOfpKrdGyjhCeAWZSkQcguKNBFOeNNUIcBCuoMEOsoQODjcOikOFsyCtXOtpOIXItWDCotGQgXMlxcsfrRmRNDyRausvRQJIVddiIXGORzAivBohgMPnGLPUmVtb3RlRXZlbnQ=') or className == ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('jBudKamEHIwFcTKDdALqvmUdYlZeBaBqsfNqZiUGpFPDrTujXZqtvhtcPBsnaAJczbYHtTZHCFlZwnCrVNmAqFbiPyApjFfEfVMqKFiPABabgNlgpOAEMIbxDykZQEXVqluQmUyadTwcPXmWwEGYwnnAgJmguQGHPFdovuhDGHrSrQZgExhzAAiDiApqVDBdgtHCMDMKySVSNujJvFuxWvIbnuIGULauxRfuIdxcGCNKXDqIAiDUIoTyTEkzsRQPrxkIaVoPibAeUsRpxSSEWvyZiDYmNvJmLSvEErwmOIaUwlTHHbUYYEbteraqHuYZlPjMmjupegPlrmbXYeAcuMzkwxKoGMVaAQhDlgUDtOLpERGtVgTvYsKKbbqMhELykTqsDnnnRZzCAxSmhcoBZaKjrcFpCtrlnekeZApVaOXodkXlVBlwczFJXnZWUmVtb3RlRnVuY3Rpb24=') then
                     table.insert(remoteList, obj:GetFullName())
                 end
                 findRemotes(obj)
@@ -38,9 +46,9 @@ RemoteTab:CreateButton({
         end
         findRemotes(game)
 
-        local resultStr = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({})
-        for i, name in ipairs(remoteList) do
-            resultStr = resultStr .. i .. TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({9200,6400}) .. name .. TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({18400,22000})
+        local resultStr = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('aPJpDQkjOGLOEyRcVpyZLEYMYAiIeNDLrAmzfsOoMCkbIUupkuoJNAnlGaIxEkOYXkSTxtsZiBTnoGRXUWklNnrleAOPJrvFGeumSiMgLJlPcquvmkBhtHCGjVjTWzLLYTLEaAkjOgRzujiqZBbSDKYxqIWBLfJlrJAYwIBdotUdjKEsOqPINXgdxUFBUaXoNfNxAHHiTkySAuBzhXKIwAsYuvTtLZxSYkMvjGfezTqDugAnEFslhDImoOMKOwwhWXyvwefqqOyzFPdWcuQnlyMxcibYBUVbBueCkocGmNyMcUEaKVCHGKYpfMLEpNqITAmTyAUircuHaHmheGpRkyrbDUXhazyBsXlZqvFszOmTofeXErBHsLOMsVOUSouxPkUdJkpxRBWvfBeRlTEVMeQHZhlWzFRlnFoWRXwokAMHQwWBcwwhXvfPazLsUmVtb3RlIEV2ZW50IEFnZW50IHYxLjBcbkJ5IEBTcG9mdHlfMTIzXG5cbg==')
+        for _, name in ipairs(remoteList) do
+            resultStr = resultStr .. ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('IWWEvnURKBLxMbCgpxsVrTLtSZBvcenrxNQiXPAfaUEEnSReoPCbEfXbFmUZvAXPYUYaIXYBXbxFLpfqresCEDhpafmDuoYCfDmaojugYHOcruWuWOzBTjBNcZbeZDkiYwcuFxgNdkAqNSeRPQBAAXLEDkgBegPDmUCXZkwkNUwfJuFFPhgZYOZCUtxyYVRwMemoxNYCnHbjAphiUkTGbOFpFzCIADJkspsLpZJTyakLZLxockKTYoOOJOfeNQKUIJkLdLxIBiBYfMDsuBQpcGcbbUaepMArXYeIHCBEBaxcafeQQvxwYOuYhwxvGqeJrcqBUBxPxwMxlHUyfCMtptQKCNeGKUbHqJdTSVAuKqNtwaoMJBjANFTJOsWjjUHuOrzeygDJWApnUZUQdTnvTcKVuHXskwDfhjNjCkQEfQQLeYXeXtjubjGxIxkDLS0g') .. name .. ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('YuiUeQYyhmDXnFpMtkUwrHNdGBdvXlLcpUZUGfSowPOArNGIFDVjfzCrBBZaJAoAwiYSdeKNxiWrNAeiwhjPJjRkVzKssYEeYdGVjOqPFdLDeaRQUtCikBQeDfgMSwvofghjwbxHQeyaRVRnuvcmcdZEDbDgvQVLaxaWXqNFhMdXSBKwBFXnBnSPhVDpRMezfWHTWaAjCUwQrsgMHoIceWOEHOhtyUwlAPBPYAvQtpTZlxFDRzNMMXFlPwsAUSWvCsXgrDWjTxsAycmxmAuXPQnsfkIRYTjQIkTDeBLqwHlfmTtVDZFHjjEbeRbcyQaBtydXUcxYvSiDyvWoNLjUzdePFojuonVoFdmteYwuNpNJLddBdbPqUrylQmYyqPjZXyhOYhzDJeeYjNWKiTOPdlJXgtxsTxrpWzlMJHctOiWcfQmSxUIWbQlkAZKiXG4=')
         end
 
         pcall(function()
@@ -48,13 +56,13 @@ RemoteTab:CreateButton({
         end)
 
         Rayfield:Notify({
-            Title = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({16400,20200,21800,22200,23200,20200,6400,14000,21000,22000,20000,20200,22800,6400,9000,6400,13000,20600,20200,22000,23200}),
-            Content = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({14000,22200,23400,22000,20000,6400}) .. #remoteList .. TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({6400,16400,20200,21800,22200,23200,20200,13800,23600,20200,22000,23200,23000,9400,16400,20200,21800,22200,23200,20200,14000,23400,22000,19800,23200,21000,22200,22000,23000,9200,6400,13400,22200,22400,21000,20200,20000,6400,23200,22200,6400,19800,21600,21000,22400,19600,22200,19400,22800,20000,9200}),
+            Title = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('GMcIQMZlMCDktPoTrrFEokodstOoZGhKxtgjtEOVOwhSkIaUGvvmcZKEwwuyrWLcoRSYMeUIItjFLiHZbpqcKKcYBmehOwIXDDMbXjYMOdwDECbkLoGnwIHzUzAaMjOxkCXRSOHmhjwqKFIHnvfzHVUYDUlAemQxGJNtCvfKtuJzfyoPtnOLihQdLiMfldiWfMoFSHGiZwJFtRsvZBbEyBrsAZQHjbYjAYXvYGibWNahcFfUPGflNCQzeOcnzyelmJVdtpRONIYAoKIdKwTbtJPRKsZdjBFJuLSBTVGesSohuKBaNzNfxmSClAzsHhmKxserBKCopBcEPdexzoLROFUTyLvIRqAWCwrYbLPpajuUzgElkAhsOsSvzlKjDTSRawvJKLTzbbAeJVHSyzVSSxUTSMkwmfYHdRGprcEFyfBRSIpAduOImsqDcZklUmVtb3RlIEZpbmRlciAtIEFnZW50IC0gdjEuMA=='),
+            Content = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('woRYcRVclHLRmeTEYfAntEsjwKqKEPyBbdedSxxissIhOzWKoIInmXsLQPunbZSOFkzTxvtQbnhOoLEZQCGYnstxEbTYdRqxUnwCKnUDXkuVhEYOnvNxujnrcDHudQSfTNfreuKcozUOiQqeVtCyOojtkfQfEhsLSPSLJxjvZTrfKwlmVEfhGNowJQhRShpiYzYsPUKdSXuwSfksVZRIYPlxLLEehojqQoBuVUQvYnCBPCDfQKweKbQioMyOWDYvTSwwabwsJEwPWHbBooDtsVTXjHfXGquDoQRxifyDfRlVorqmVdbNCysQMtokekymbQPiKCfQCZShUSsGlejRFPPzsQYVkJZpSnQKViMRqgrbPllrJgEoqDEFEZoBXHTcjILjrYvNHxfoJPIEHCOOmlHdlaYuQcOICvscrBTdeQhPUwyHZEnIEQIBDHAyRm91bmQg') .. #remoteList .. ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('DlDjLEBomPXlwlaAaLfATIMBYnRMRCWxcTXqbSAgfjszUQyZjHzcPjFTZHKgvFZwJgioebXkStrPeDNPJzCFiKxeZoAAkJVbcWJGFimciOABXaArQxLIpMmTyXDVVUlHdCtabHOgzvliLESsFxZUbGRNGfcrJjRQiBkWaiGdfnhKiehZZIiKSMHoiUrJYOEruKRSYRrOarUmbDoFycOfSzTSQqlyqWifhrSFfTIHzUjDksGqeunTZvOSvUgqPrkbGuSBDPekzoprvTLoPsJFgQZFTTYkaYGQWTWTrFdGZiKRmOdadRfMvbvZNrCShvZENglAQGzEweLwlLknaxTmxoAgLcQzJWMwKFeNChLuuVjPZTFhxNlepXAKBvRtGhBcDoVAddCuOONKJRlAohSUrrQdqFrOCfwJzSUhLkGnzieXdgXSKkvGeHlCzaiZIFJlbW90ZUV2ZW50cy9SZW1vdGVGdW5jdGlvbnMuIENvcGllZCB0byBjbGlwYm9hcmQu'),
             Duration = 5,
             Image = 4483362458,
             Actions = {
                 Ignore = {
-                    Name = TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({15800,15000}),
+                    Name = ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('trFLFmkhLYcDpdZWpUxEnaucqTZaAxFhYfuFjfEjYZuSKkGEwEyCaqnCVSRPjdnCTrotFNsFjBMLHCQBzCBULGMshNJtuQCTRpdAalhKzhEvguuXrouDQRMAyjjgzUPABYLBOLozVMAboZbvKdStlYMsivPVckoqboOqGHPEqoYsWxTIZlaiOuOZVkHuZTxytWYhLBsZBeVWqIkJAYnRAtyjrNNtqFiGfapwaSwPUepuAuLhQiHcxpxdxDLHuuLpgGPghyovfstNKoURRPFfWKRUdrEEPqkedputuupfgTlmwmgGNlgTLKzUkPAraWijINTtJfLCaqTrVEWseQICEzdchWbHZYmlXpkBqnVCofVUxotdouqFeuliSFwQYhBImCcNuouAYzIBdMWIYjxUdwTRxBuDCNEwDIHJkWdloBfDMjZAhGaWiksmBPlJT0s='),
                     Callback = function() end
                 },
             },
@@ -62,9 +70,9 @@ RemoteTab:CreateButton({
     end
 })
 
-local InfoTab = Window:CreateTab(TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({14600,22000,20400,22200}))
+local InfoTab = Window:CreateTab(ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('wImMLVqleZAzfTMJMVTInoNKLzzKNwTdtuIIsNzYYUtfuAhqcwyVGfOIDRXkHzqtwtCJGWVYYjSHaQqrCvXcwQRgjdzTtiatZGVrorJZNIhOMcMeMstOYuiAMYdyIFHBswBcdTAxkLuNnCqbjXvVFTwECDRjakpRHrbRIMLzCySLfcMCRzfcYDhmSKfCQuIMlfQAQtVxvfrwUAGzECBhVjzYfYomteEuxLFGnUMWJwXrkqComwSVRouxbMqUuJXqlZmiuKiIVOdgSmkagUDebDvkfrVAAlfdXjJpWhPRCnRbbxSksaOaXwCaJulBnZAYDhtWFxHwAbCDCJKuiTuOnoaiExtOMTbvdmLIRBtMDTGPDkCsRJXYdtOvKKtWdXtLLkxFkTGtlQSJDtcVgqrlbzekhGUNSZaqDrhkrGGbLKDOgghbKcsVvadESAMaSW5mbw=='))
 
-InfoTab:CreateLabel(TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({17200,20200,22800,23000,21000,22200,22000,6400,17600,9000,10600,9200,10000}))
-InfoTab:CreateLabel(TsJnEcjyPouKtFEBmoIEAOANFCdSBxRuZNRdvnDPDgfTftdRdSmIgFsfHIUufbb({13400,22800,20200,19400,23200,22200,22800,6400,12800,16600,22400,22200,20400,23200,24200,19000,9800,10000,10200}))
+InfoTab:CreateLabel(ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('sGZDCqYkMJiFzFoAIauzEtoDNWRsjYJozscInYTYpuikcGpCqRoBTlxgUSAnhjOsKIxuWnEPDfOihSXtXEaWgXFWJBYwdLKyjVpVzKSykViXbetJpQriaHXPsFWKCJXIYPuknRgnEKWJtYFrGwMPJZpgWorxAbjwMXGkhQfsFulixiTlPedwMzTysVeMMgdVpCaTmGodrRRmbaynpGVFfeKqsgtfymFsCZKJWECszHotXIAIOVYjjRpdPDSbfqPRdDGkbulNtlsYLmwVufGGFTOOTHiINODZqntMgeOZsekQUMfseLTYIMWoPNRQCjYaXUsARjdXUYGWGHButAhAKPlHpuqYDhlSfSldUCUaMWVIvUtTstkBjfVsDbUfpKkuafuUzBHTyDXLOskzdwLEUNRWdnNabRTWCgNKhQEDphGncFLFIuDwGTyrOatxVmVyc2lvbiBYLTUuMw=='))
+InfoTab:CreateLabel(ZVAMbQDfYqSljCvJZbDoekjqAWvvYGcAhLHiSsafVCvGmcB('WUJtrVMvMiOvvYehNUsAGeuqfvEzUJPBSUmDmWHzqqUTOVcxJqhdaUIOJXuBcUaSeTwTvhSvbQdrKYlhduWGBDwarAttfiMGBwMSfZvUqprROdXGyXqKWqSYagzLzLSyPhxrjokqsTOGUlUSumjDTdaiNVWlhFdApaGPSZXhQiqufasxrwdArYFOLKKyAoCKDTbifzJTNdAzKXXdoahcNHLNwoAekQxvEcDCGeVUfzkYKGMWOwUaOHjDDrYNjUbQQZzIJskaJzfPgYpDovMOqKfnqHNzlUGSpnFsTOJfwPSaxCjpEQiZkRVfsSxmhiYMcPBpvbPavahZKIASctDmMGFgCtdxXjCXiIjZdvezoplseZAJBggKIIdOCHoDMyiRxlkLqSXOYpAAsxDtafVkRGYZeRhYLCdTbKpMbwKWjBEoKkPgaoOszrYNxDLWQ3JlYXRvciBAU3BvZnR5XzEyMw=='))
 
-Rayfield:LoadConfiguration()    
+Rayfield:LoadConfiguration()   
